@@ -1,5 +1,5 @@
 // src/services/authService.js
-const API_URL = process.env.REACT_APP_API_URL || 'https://reporting-lwks.onrender.com';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8081/api';
 
 // Real API call function
 const realApiRequest = async (endpoint, options = {}) => {
