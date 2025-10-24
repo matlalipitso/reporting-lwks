@@ -49,10 +49,10 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 // Database configuration from environment variables
 const dbConfig = {
-  host: process.env.DB_HOST || 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
-  user: process.env.DB_USER || '46uLvdkuDn4vp8d.root',
-  password: process.env.DB_PASSWORD || '1S6GYMwJsPF6nbT6',
-  database: process.env.DB_NAME || 'test',
+  host: process.env.DB_HOST || 'localhost',
+  user: process.env.DB_USER || 'root',
+  password: process.env.DB_PASSWORD || 'matlali@123',
+  database: process.env.DB_NAME || 'luct',
   ssl:{
     rejectUnauthorized: true,
     minVersion: 'TLSv1.2'
